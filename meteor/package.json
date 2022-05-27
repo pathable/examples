@@ -1,0 +1,29 @@
+{
+  "name": "meteor",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "start-device": "meteor run android-device",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.17.9",
+    "@capacitor/android": "2.1.2",
+    "@capacitor/cli": "^2.1.2",
+    "@capacitor/core": "^2.1.2",
+    "@capacitor/ios": "2.1.2",
+    "cordova-plugin-meteor-webapp": "^2.0.0",
+    "cordova-plugin-androidx-adapter": "^1.1.3",
+    "meteor-node-stubs": "^1.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.jsx",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  }
+}

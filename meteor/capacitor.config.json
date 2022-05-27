@@ -1,0 +1,13 @@
+{
+  "appId": "com.capacitorjs.examples.meteor",
+  "appName": "cap-meteor",
+  "bundledWebRuntime": false,
+  "npmClient": "yarn",
+  "webDir": ".meteor/local/cordova-build/www/application",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}
